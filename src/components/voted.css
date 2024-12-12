@@ -1,0 +1,121 @@
+/* Container for background */
+.containery {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 2; /* Adjust this opacity to your preference */
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* To handle the image properly */
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Zoom effect for background image */
+.containery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%; /* Full height */
+}
+
+/* Card Layout */
+.card {
+  background-color: white;
+  height: 300px;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  border-color: #007BFF;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 10; /* Ensure it appears above the background image */
+  margin: auto; /* Centering */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.03); /* Adds slight lift and zoom */
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+}
+
+/* Adding a hover animation */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Logout Button Styles */
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+.logout-text {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.logout-text a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.logout-text a:hover {
+  text-decoration: underline;
+}
+
+/* Voter Details Section */
+.voter-details {
+  margin-bottom: 20px;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.user-info {
+  color: #666;
+  margin: 2px 0;
+}
+
+.voting-status {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.voted {
+  color: green;
+}
+
+.not-voted {
+  color: red;
+}
+
+/* Main Message */
+.main-message {
+  margin-top: 20px;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0056b3;
+}

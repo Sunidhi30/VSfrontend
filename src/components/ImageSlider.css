@@ -1,0 +1,50 @@
+/* ImageSlider.css */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  .background-image1 {
+    background-image: url('../assets//bgImage1.avif');
+  }
+  .background-image2 {
+    background-image: url('../assets/bgImage2.webp')
+  }
+  .background-image3 {
+    background-image: url('../assets/bgImage3.avif');
+  }
+  
+  

@@ -1,0 +1,298 @@
+/* style.css */
+
+
+  
+  
+ 
+  .overlay p {
+    font-size: 1.5em;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px; 
+  }
+  
+  .evote-section {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .evote-section h2 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .evote-content {
+    display: flex;
+   
+  }
+  
+  .evote-image {
+    flex: 0 0 40%; /* Adjust width of the image */
+    height: 80%;
+  }
+  
+  .evote-image img {
+    width: 100%;
+  height: 100%; /* Ensure the image covers its container */
+  object-fit: cover;
+  }
+  
+  .evote-text {
+    flex: 0 0 60%; /* Adjust width of the text */
+  padding-left: 20px;
+  }
+  
+  .evote-text p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  /* how it works */
+  
+  .how-it-works-section {
+    background-color: transparent; /* or another color */
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .section-heading {
+    font-size: 70px;
+    font-weight: bold;
+  }
+  
+  .section-subheading {
+    font-size: 18px;
+    color: grey;
+    margin-bottom: 30px;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .step {
+    width: 30%;
+  }
+  
+  .step-number {
+    font-size: 30px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto 20px;
+  }
+  
+  .step-heading {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .step-text {
+    font-size: 16px;
+    color: grey;
+  }
+  
+  
+  
+  /* Add this CSS to your stylesheet  for voting*/
+  /* Add this CSS to your stylesheet */
+.scrolling-text-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%; /* Start from outside the view */
+  animation: ticker 15s linear infinite;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%); /* Start from the right edge */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left edge */
+  }
+}
+.table-wrapper {
+  max-height: 500px; /* Adjust this value as needed */
+  overflow-y: auto;
+}
+.action-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  justify-content: center;
+}
+.card {
+  position: relative;
+}
+
+
+
+.hover-card:hover .info-overlay {
+  opacity: 1;
+}
+
+.info-overlay {
+  background-color: rgba(0, 0, 255, 0.8);
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+/*style for profile */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-50 {
+  background-color: #F9FAFB;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-gray-200 {
+  border-color: #E5E7EB;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-600 {
+  color: #4B5563;
+}
+
+.bg-red-500 {
+  background-color: #EF4444;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+
+/* logo styling*/
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+  padding : 100
+}
+
+.logo {
+  width: 70px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; /* For a circular logo, remove if not needed */
+}
+/*voted css */
+/* Add keyframes for zoom animation */
+/* Zoom animation */
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Zoom in */
+  }
+}
+
+/* Popper animation (your original animation) */
+.popper-animation {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Combine both animations */
+.zoom-animation {
+  animation: zoom 2s infinite; /* Apply zoom-in and zoom-out */
+}

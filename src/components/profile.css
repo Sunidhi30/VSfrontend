@@ -1,0 +1,68 @@
+/* Profile Page Container */
+.profile-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* User Information Styling */
+  .user-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .user-info {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .voting-status {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .voted {
+    color: green;
+  }
+  
+  .not-voted {
+    color: red;
+  }
+  
+  /* Error Text */
+  .error-text {
+    color: red;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,254 @@
+body {
+  overflow-x: hidden;
+   background-color: white; /* Light background */
+    color: black; /* Light text color */
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.background-image {
+    position: relative;
+    height: 100vh; /* Ensure full height */
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+.background-image .bg-color {
+    background-color: rgba(0, 0, 0, 0.5); /* For 50% opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+  }
+  
+.overlay.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10; /* Ensure the text appears above the background */
+    color: white; /* Text color */
+    max-width: 80%; /* For better responsiveness */
+}
+
+.heading-transition {
+    font-size: 55px;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: wipe 3s forwards; /* Add wipe animation */
+}
+.heading-transition span {
+  font-size: inherit; /* Ensures both parts are the same size */
+}
+
+@keyframes wipe {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* In your CSS file */
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    width: 0;
+    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite 6.5s;
+    /* Ensure the text stays visible after typing animation */
+}
+
+  
+  /* Typing animation */
+  @keyframes typing {
+    from { width: 20; }
+    to { width: 100%; }
+  }
+  
+  /* Cursor blink animation, but stop after 3.5s (same time as typing) */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+  }
+  .paragraph {
+    display: none; /* Hide by default */
+    opacity: 0;   /* Start with opacity 0 for fade effect */
+    transition: opacity 2s ease; /* Smooth transition for visibility */
+}
+  
+  .typing-effect {
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite 3.5s;
+    /* Stops blink-caret after typing animation ends */
+  }
+  
+
+/* Typing animation (optiol)
+ */
+/* Typing animation */
+
+/* Style for the about container */
+.container {
+  max-width: 800px;
+  /* margin: 1px 1px; */
+  padding: 40 20px; 
+  margin: 40px auto;
+
+}
+
+.evote-section {
+  margin-top: 20px;
+  text-align: center;
+
+  /* margin-bottom: 200px */
+}
+
+.evote-section h2 {
+
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  text-align: center ;
+  /* font-size: 20px; */
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+
+}
+
+.evote-content {
+  display: flex;
+  flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+
+ 
+}
+
+.evote-image {
+  flex: 0 0 40%; /* Adjust width of the image */
+  height: 80%;
+}
+
+.evote-image img {
+  width: 100%;
+height: 100%; /* Ensure the image covers its container */
+object-fit: cover;
+}
+
+.evote-text {
+  flex: 0 0 60%; /* Adjust width of the text */
+padding-left: 40px;
+text-align: left;
+padding-right: 60px;
+max-width: 54%; /* Ensure the text doesn't overflow */
+box-sizing: border-box; /* Ensure padding is included in the width */
+
+
+}
+
+.evote-text p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.how-it-works-section {
+  text-align: center;
+  margin: 40px auto;
+  background-color: #ffffff; /* White background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Optional box shadow to make it stand out */
+}
+
+
+.section-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-subheading {
+  font-size: 1.2rem;
+  color:#ffffff;
+  margin-bottom: 40px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.step {
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #0000FF;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.step-circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  background-color: #4285f4;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-heading {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+#step-1:hover .step-circle {
+  background-color: #FF6347;
+}
+
+#step-2:hover .step-circle {
+  background-color: #32CD32;
+}
+
+#step-3:hover .step-circle {
+  background-color: #FF8C00;
+}

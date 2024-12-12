@@ -1,0 +1,42 @@
+.how-it-works {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.step:hover {
+    transform: scale(1.02);
+}
+
+.step-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.step-description {
+    color: #666;
+}
